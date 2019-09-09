@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal|center_vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="To Do Information"
+            android:textSize="@dimen/twenty_size"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/ten_margin"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:theme="@style/AppTheme">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/nameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginBottom="@dimen/ten_margin"
+            android:layout_marginTop="@dimen/ten_margin"
+            android:theme="@style/AppTheme">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/emailText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress">
+
+            </androidx.appcompat.widget.AppCompatEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_marginTop="@dimen/thirty_margin">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.2"
+                android:elevation="@dimen/ten_margin"
+                android:padding="@dimen/ten_margin"
+                android:background="@color/colorPrimary"
+                android:text="Save"
+                android:textColor="@color/icons"
+                android:textColorLink="@color/icons"
+                android:textSize="@dimen/fifteen_size">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <View android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                android:layout_weight=".6"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.2"
+                android:elevation="@dimen/ten_margin"
+                android:padding="@dimen/ten_margin"
+                android:background="@color/colorPrimary"
+                android:text="Cancel"
+                android:textColor="@color/icons"
+                android:textColorLink="@color/icons"
+                android:textSize="@dimen/fifteen_size">
+
+            </androidx.appcompat.widget.AppCompatButton>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
